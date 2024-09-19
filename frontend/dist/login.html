@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../dist/style.css">
+</head>
+<body>
+    <div class=" bg-gradient-to-br from-blue-600 to to-indigo-900 h-dvh w-full flex justify-center items-center flex-col" >
+        <div class="bg-slate-200 h-auto max-w-[500px] w-[80%] rounded-2xl flex flex-col items-center justify-center  py-8 gap-5 shadow-lg shadow-black/30">
+            <h class="font-semibold text-4xl leading-relaxed">Login</h>
+
+            <div class="input-containers w-[80%]">
+                <input type="email" name="email" id="email" class="w-full rounded-md outline-none px-4 py-3 text-xl" placeholder="Email">
+                <div class="password-container mt-5 w-full rounded-md bg-white flex items-center justify-between pr-5">
+                    <input type="password" name="password" id="password" class="outline-none px-4 py-3 text-xl w-full" placeholder="Password"> 
+                    <i class="ri-eye-line text-xl cursor-pointer text-slate-800 hidden" id="eye_open"></i>
+                    <i class="ri-eye-off-line text-xl cursor-pointer text-slate-800 " id="eye_close"></i>
+                </div>  
+            </div>
+
+            <button class=" text-white w-[80%] py-3 text-xl rounded-xl cursor-pointer transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ">Login</button>
+
+            <p class="font-medium">Don't have an account? <a href="index.html" class="text-blue-400 hover:underline">Signup</a></p>
+
+            <div class="or-container flex items-center w-[80%]">
+                <div class="flex-grow h-px bg-gray-400"></div>
+                <span class="px-4 text-gray-500 font-medium">or</span>
+                <div class="flex-grow h-px bg-gray-400"></div>
+            </div>
+
+            <div class="social-logins w-[80%] flex flex-col gap-4">
+                <button class=" text-white w-full py-3 text-xl rounded-xl cursor-pointer transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ">
+                    <i class="ri-google-fill"></i>
+                    Login with Google
+                </button>
+                <button class=" text-white w-full py-3 text-xl rounded-xl cursor-pointer transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ">
+                    <i class="ri-facebook-fill"></i>
+                    Login with Facebook
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="logInScript.js"></script>
+</body>
+</html>
